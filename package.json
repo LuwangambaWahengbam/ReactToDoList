@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-   "homepage": "https://github.com/LuwangambaWahengbam/ReactToDoList.git",
+   "homepage":  "https://luwangambawahengbam.github.io/ReactToDoList
+",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
