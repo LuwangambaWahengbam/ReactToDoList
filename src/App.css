@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #dae3f3;
+}
+
+.ToDo-app {
+  width: 100%;
+  min-width: 400px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 5px 5px 10px #dbb7b7, -5px -5px 10px #fff, inset 0 5px #3d08ff;
+}
+
+h1 {
+  text-align: center;
+  color: #4614fa;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.add-task {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  transition: border-color 0.3s ease;
+  outline: none;
+  border-radius: 8px;
+}
+.add-task input:focus {
+  border-color: #007bff;
+}
+
+.add-task button {
+  padding: 0.75rem;
+  background-color: #4614fa;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: ponter;
+  transition: background-color 0.8s ease;
+}
+.add-task button:hover {
+  background-color: #3d0fe2;
+  box-shadow: 5px 5px 10px #7f5bff, -5px -5px 10px #d2faff;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+.task-item:hover {
+  background-color: #eef2ff;
+}
+.task-item span {
+  text-align: center;
+  justify-content: center;
+}
+.task-item {
+  border-radius: 10px;
+  margin: 0.5rem;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+.task-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #3d08ff;
+  margin-right: 1rem;
+  transition: background-color 0.3 ease;
+  cursor: pointer;
+}
+
+.task-checkbox:checked {
+  background-color: #3700ff;
+  border-color: #14c8ff;
+}
+
+.task-checkbox:checked::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 2px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.remove-btn:hover {
+  color: rgb(201, 0, 0);
+}
